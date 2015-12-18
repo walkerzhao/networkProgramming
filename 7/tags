@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFSIZE	trace.h	7;"	d
+OBJS	Makefile	/^OBJS = main.o icmpcode_v4.o icmpcode_v6.o recv_v4.o recv_v6.o \\$/;"	m
+PROGS	Makefile	/^PROGS =	traceroute$/;"	m
+datalen	main.c	/^int		datalen = sizeof(struct rec);	\/* defaults *\/$/;"	v
+datalen	trace.h	/^int		 datalen;			\/* # bytes of data following ICMP header *\/$/;"	v
+dport	main.c	/^u_short	dport = 32768 + 666;$/;"	v
+dport	trace.h	/^u_short	 sport, dport;$/;"	v
+gotalarm	sig_alrm.c	/^int gotalarm;$/;"	v
+host	trace.h	/^char	*host;$/;"	v
+icmpcode	trace.h	/^  const char	*(*icmpcode)(int);$/;"	m	struct:proto
+icmpcode_v4	icmpcode_v4.c	/^icmpcode_v4(int code)$/;"	f
+icmpcode_v6	icmpcode_v6.c	/^icmpcode_v6(int code)$/;"	f
+icmpproto	trace.h	/^  int			icmpproto;	\/* IPPROTO_xxx value for ICMP *\/$/;"	m	struct:proto
+main	main.c	/^main(int argc, char **argv)$/;"	f
+max_ttl	main.c	/^int		max_ttl = 30;$/;"	v
+max_ttl	trace.h	/^int		 ttl, max_ttl;$/;"	v
+nprobes	main.c	/^int		nprobes = 3;$/;"	v
+nprobes	trace.h	/^int		 probe, nprobes;$/;"	v
+nsent	trace.h	/^int		 nsent;				\/* add 1 for each sendto() *\/$/;"	v
+pid	trace.h	/^pid_t	 pid;				\/* our PID *\/$/;"	v
+pr	trace.h	/^} *pr;$/;"	v	typeref:struct:proto
+probe	trace.h	/^int		 probe, nprobes;$/;"	v
+proto	trace.h	/^struct proto {$/;"	s
+proto_v4	main.c	/^struct proto	proto_v4 = { icmpcode_v4, recv_v4, NULL, NULL, NULL, NULL, 0,$/;"	v	typeref:struct:proto
+proto_v6	main.c	/^struct proto	proto_v6 = { icmpcode_v6, recv_v6, NULL, NULL, NULL, NULL, 0,$/;"	v	typeref:struct:proto
+rec	trace.h	/^struct rec {					\/* format of outgoing UDP data *\/$/;"	s
+rec_seq	trace.h	/^  u_short	rec_seq;			\/* sequence number *\/$/;"	m	struct:rec
+rec_ttl	trace.h	/^  u_short	rec_ttl;			\/* TTL packet left with *\/$/;"	m	struct:rec
+rec_tv	trace.h	/^  struct timeval	rec_tv;		\/* time packet left *\/$/;"	m	struct:rec	typeref:struct:rec::timeval
+recv	trace.h	/^  int	 (*recv)(int, struct timeval *);$/;"	m	struct:proto
+recv_v4	recv_v4.c	/^recv_v4(int seq, struct timeval *tv)$/;"	f
+recv_v6	recv_v6.c	/^recv_v6(int seq, struct timeval *tv)$/;"	f
+recvbuf	trace.h	/^char	 recvbuf[BUFSIZE];$/;"	v
+recvfd	trace.h	/^int		 sendfd, recvfd;	\/* send on UDP sock, read on raw ICMP sock *\/$/;"	v
+sabind	trace.h	/^  struct sockaddr  *sabind;	\/* sockaddr{} for binding source port *\/$/;"	m	struct:proto	typeref:struct:proto::sockaddr
+salast	trace.h	/^  struct sockaddr  *salast;	\/* last sockaddr{} for receiving *\/$/;"	m	struct:proto	typeref:struct:proto::sockaddr
+salen	trace.h	/^  socklen_t   		salen;	\/* length of sockaddr{}s *\/$/;"	m	struct:proto
+sarecv	trace.h	/^  struct sockaddr  *sarecv;	\/* sockaddr{} for receiving *\/$/;"	m	struct:proto	typeref:struct:proto::sockaddr
+sasend	trace.h	/^  struct sockaddr  *sasend;	\/* sockaddr{} for send, from getaddrinfo *\/$/;"	m	struct:proto	typeref:struct:proto::sockaddr
+sendbuf	trace.h	/^char	 sendbuf[BUFSIZE];$/;"	v
+sendfd	trace.h	/^int		 sendfd, recvfd;	\/* send on UDP sock, read on raw ICMP sock *\/$/;"	v
+sig_alrm	sig_alrm.c	/^sig_alrm(int signo)$/;"	f
+sport	trace.h	/^u_short	 sport, dport;$/;"	v
+traceloop	traceloop.c	/^traceloop(void)$/;"	f
+ttl	trace.h	/^int		 ttl, max_ttl;$/;"	v
+ttllevel	trace.h	/^  int	   ttllevel;		\/* setsockopt() level to set TTL *\/$/;"	m	struct:proto
+ttloptname	trace.h	/^  int	   ttloptname;		\/* setsockopt() name to set TTL *\/$/;"	m	struct:proto
+tv_sub	tv_sub.c	/^tv_sub(struct timeval *out, struct timeval *in)$/;"	f
+verbose	trace.h	/^int		 verbose;$/;"	v

@@ -21,9 +21,13 @@
 ## 5. 实现FTP基本的功能
 
 
-## 6. 实现Ping/Tracert的基本功能（原始套接字使用）
+## 6. 使用原始套接字实现Ping基本功能
+### content:见博客:http://blog.csdn.net/zy416548283/article/details/50327321
+### key:原始套接字 ICMP PING
 
-## 7. 实现ifconfig基本功能
+## 7. 编程实现Traceroute基本功能
+### content:见博客:http://blog.csdn.net/zy416548283/article/details/50354530
+### key: 原始套接字 ICMP Traceroute TTL
 
 ## 8. 多播协议的应用
 

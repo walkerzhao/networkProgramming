@@ -1,0 +1,150 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	old/bsdping.c	93;"	d	file:
+B	old/bsdping.c	94;"	d	file:
+BSPACE	old/bsdping.c	/^char BSPACE = '\\b';		\/* characters written for flood *\/$/;"	v
+BUFSIZE	ping.h	6;"	d
+CLR	old/bsdping.c	96;"	d	file:
+DEFDATALEN	old/bsdping.c	87;"	d	file:
+DOT	old/bsdping.c	/^char DOT = '.';$/;"	v
+F_FLOOD	old/bsdping.c	99;"	d	file:
+F_INTERVAL	old/bsdping.c	100;"	d	file:
+F_NUMERIC	old/bsdping.c	101;"	d	file:
+F_PINGFILLED	old/bsdping.c	102;"	d	file:
+F_QUIET	old/bsdping.c	103;"	d	file:
+F_RROUTE	old/bsdping.c	104;"	d	file:
+F_SO_DEBUG	old/bsdping.c	105;"	d	file:
+F_SO_DONTROUTE	old/bsdping.c	106;"	d	file:
+F_VERBOSE	old/bsdping.c	107;"	d	file:
+ICMPV6_DEST_UNREACH	old/icmp6.h	21;"	d
+ICMPV6_DEST_UNREACH_ADDR	old/icmp6.h	38;"	d
+ICMPV6_DEST_UNREACH_ADMIN	old/icmp6.h	35;"	d
+ICMPV6_DEST_UNREACH_NOPORT	old/icmp6.h	39;"	d
+ICMPV6_DEST_UNREACH_NOROUTE	old/icmp6.h	34;"	d
+ICMPV6_DEST_UNREACH_NOTNEIGHBOR	old/icmp6.h	37;"	d
+ICMPV6_ECHORPLY	old/icmp6.h	29;"	d
+ICMPV6_ECHORQST	old/icmp6.h	28;"	d
+ICMPV6_INFOMSG_MASK	old/icmp6.h	26;"	d
+ICMPV6_MGM_QUERY	old/icmp6.h	30;"	d
+ICMPV6_MGM_REDUCTION	old/icmp6.h	32;"	d
+ICMPV6_MGM_REPORT	old/icmp6.h	31;"	d
+ICMPV6_PARAMPROB	old/icmp6.h	24;"	d
+ICMPV6_PARAMPROB_HDR	old/icmp6.h	44;"	d
+ICMPV6_PARAMPROB_NXT_HDR	old/icmp6.h	45;"	d
+ICMPV6_PARAMPROB_OPTS	old/icmp6.h	46;"	d
+ICMPV6_PKT_TOOBIG	old/icmp6.h	22;"	d
+ICMPV6_TIME_EXCEED	old/icmp6.h	23;"	d
+ICMPV6_TIME_EXCEED_HOPS	old/icmp6.h	41;"	d
+ICMPV6_TIME_EXCEED_REASSEMBLY	old/icmp6.h	42;"	d
+MAXICMPLEN	old/bsdping.c	89;"	d	file:
+MAXIPLEN	old/bsdping.c	88;"	d	file:
+MAXPACKET	old/bsdping.c	90;"	d	file:
+MAXWAIT	old/bsdping.c	382;"	d	file:
+MAX_DUP_CHK	old/bsdping.c	115;"	d	file:
+NROUTES	old/bsdping.c	91;"	d	file:
+OBJS	Makefile	/^OBJS = init_v6.o main.o proc_v4.o proc_v6.o readloop.o \\$/;"	m
+PROGS	Makefile	/^PROGS =	ping$/;"	m
+SET	old/bsdping.c	95;"	d	file:
+TST	old/bsdping.c	97;"	d	file:
+copyright	old/bsdping.c	/^static char copyright[] =$/;"	v	file:
+ctl6_flow	old/ip6.h	/^	    u_int32_t ctl6_flow;	\/* 24 bits of flow-ID *\/$/;"	m	struct:ip6hdr::__anon1::ip6hdrctl
+ctl6_hlim	old/ip6.h	/^	    u_int8_t  ctl6_hlim;        \/* hop limit *\/$/;"	m	struct:ip6hdr::__anon1::ip6hdrctl
+ctl6_nxt	old/ip6.h	/^	    u_int8_t  ctl6_nxt;         \/* next header *\/$/;"	m	struct:ip6hdr::__anon1::ip6hdrctl
+ctl6_plen	old/ip6.h	/^	    u_int16_t ctl6_plen;        \/* payload length *\/$/;"	m	struct:ip6hdr::__anon1::ip6hdrctl
+datalen	main.c	/^int	datalen = 56;		\/* data that goes with ICMP echo request *\/$/;"	v
+datalen	old/bsdping.c	/^int datalen = DEFDATALEN;$/;"	v
+datalen	ping.h	/^int		 datalen;			\/* # bytes of data following ICMP header *\/$/;"	v
+fill	old/bsdping.c	/^fill(bp, patp)$/;"	f
+finit	ping.h	/^  void	 (*finit)(void);$/;"	m	struct:proto
+fproc	ping.h	/^  void	 (*fproc)(char *, ssize_t, struct msghdr *, struct timeval *);$/;"	m	struct:proto
+fsend	ping.h	/^  void	 (*fsend)(void);$/;"	m	struct:proto
+host	ping.h	/^char	*host;$/;"	v
+hostname	old/bsdping.c	/^char *hostname;$/;"	v
+icmp6_cksum	old/icmp6.h	/^    u_int16_t	icmp6_cksum;		\/* Checksum field *\/$/;"	m	struct:icmp6hdr
+icmp6_code	old/icmp6.h	/^    u_int8_t	icmp6_code;		\/* Code field *\/$/;"	m	struct:icmp6hdr
+icmp6_data16	old/icmp6.h	13;"	d
+icmp6_data32	old/icmp6.h	12;"	d
+icmp6_data8	old/icmp6.h	14;"	d
+icmp6_dataun	old/icmp6.h	/^    } icmp6_dataun;$/;"	m	struct:icmp6hdr	typeref:union:icmp6hdr::__anon2
+icmp6_id	old/icmp6.h	17;"	d
+icmp6_maxdelay	old/icmp6.h	19;"	d
+icmp6_mtu	old/icmp6.h	16;"	d
+icmp6_pptr	old/icmp6.h	15;"	d
+icmp6_seq	old/icmp6.h	18;"	d
+icmp6_type	old/icmp6.h	/^    u_int8_t	icmp6_type;		\/* Type field *\/$/;"	m	struct:icmp6hdr
+icmp6hdr	old/icmp6.h	/^struct icmp6hdr {$/;"	s
+icmpproto	ping.h	/^  int	   	    icmpproto;	\/* IPPROTO_xxx value for ICMP *\/$/;"	m	struct:proto
+ident	old/bsdping.c	/^int ident;			\/* process id to identify our packets *\/$/;"	v
+in_cksum	old/bsdping.c	/^in_cksum(addr, len)$/;"	f
+init_v6	init_v6.c	/^init_v6()$/;"	f
+interval	old/bsdping.c	/^int interval = 1;		\/* interval between packets *\/$/;"	v
+ip6_ctlun	old/ip6.h	/^    } ip6_ctlun;$/;"	m	struct:ip6hdr	typeref:union:ip6hdr::__anon1
+ip6_dst	old/ip6.h	/^    struct in6_addr ip6_dst;		\/* destination address *\/$/;"	m	struct:ip6hdr	typeref:struct:ip6hdr::in6_addr
+ip6_flow	old/ip6.h	16;"	d
+ip6_hlim	old/ip6.h	19;"	d
+ip6_hops	old/ip6.h	20;"	d
+ip6_nxt	old/ip6.h	18;"	d
+ip6_plen	old/ip6.h	17;"	d
+ip6_src	old/ip6.h	/^    struct in6_addr ip6_src;		\/* source address *\/$/;"	m	struct:ip6hdr	typeref:struct:ip6hdr::in6_addr
+ip6_vfc	old/ip6.h	15;"	d
+ip6hdr	old/ip6.h	/^struct ip6hdr {$/;"	s
+ip6hdrctl	old/ip6.h	/^	struct ip6hdrctl {$/;"	s	union:ip6hdr::__anon1
+main	main.c	/^main(int argc, char **argv)$/;"	f
+main	old/bsdping.c	/^main(argc, argv)$/;"	f
+mx_dup_ck	old/bsdping.c	/^int mx_dup_ck = MAX_DUP_CHK;$/;"	v
+npackets	old/bsdping.c	/^long npackets;			\/* max packets to transmit *\/$/;"	v
+nreceived	old/bsdping.c	/^long nreceived;			\/* # of packets we got back *\/$/;"	v
+nrepeats	old/bsdping.c	/^long nrepeats;			\/* number of duplicates *\/$/;"	v
+nsent	ping.h	/^int		 nsent;				\/* add 1 for each sendto() *\/$/;"	v
+ntransmitted	old/bsdping.c	/^long ntransmitted;		\/* sequence # for outbound packets = #sent *\/$/;"	v
+onalrm	old/bsdping.c	/^onalrm(signo)$/;"	f
+oninfo	old/bsdping.c	/^oninfo(notused)$/;"	f
+onint	old/bsdping.c	/^onint(notused)$/;"	f
+options	old/bsdping.c	/^u_int options;$/;"	v
+outpack	old/bsdping.c	/^u_char outpack[MAXPACKET];$/;"	v
+pid	ping.h	/^pid_t	 pid;				\/* our PID *\/$/;"	v
+ping_v4	old/ping_v4.c	/^ping_v4(struct hostent *hptr)$/;"	f
+pinger	old/bsdping.c	/^pinger()$/;"	f
+pr	ping.h	/^} *pr;$/;"	v	typeref:struct:proto
+pr_addr	old/bsdping.c	/^pr_addr(l)$/;"	f
+pr_icmph	old/bsdping.c	/^pr_icmph(icp)$/;"	f
+pr_iph	old/bsdping.c	/^pr_iph(ip)$/;"	f
+pr_pack	old/bsdping.c	/^pr_pack(buf, cc, from)$/;"	f
+pr_retip	old/bsdping.c	/^pr_retip(ip)$/;"	f
+proc_v4	proc_v4.c	/^proc_v4(char *ptr, ssize_t len, struct msghdr *msg, struct timeval *tvrecv)$/;"	f
+proc_v6	proc_v6.c	/^proc_v6(char *ptr, ssize_t len, struct msghdr *msg, struct timeval* tvrecv)$/;"	f
+proto	ping.h	/^struct proto {$/;"	s
+proto_v4	main.c	/^struct proto	proto_v4 = { proc_v4, send_v4, NULL, NULL, NULL, 0, IPPROTO_ICMP };$/;"	v	typeref:struct:proto
+proto_v6	main.c	/^struct proto	proto_v6 = { proc_v6, send_v6, init_v6, NULL, NULL, 0, IPPROTO_ICMPV6 };$/;"	v	typeref:struct:proto
+rcvd_tbl	old/bsdping.c	/^char rcvd_tbl[MAX_DUP_CHK \/ 8];$/;"	v
+readloop	readloop.c	/^readloop(void)$/;"	f
+s	old/bsdping.c	/^int s;				\/* socket file descriptor *\/$/;"	v
+salen	ping.h	/^  socklen_t	    salen;		\/* length of sockaddr{}s *\/$/;"	m	struct:proto
+sarecv	ping.h	/^  struct sockaddr  *sarecv;	\/* sockaddr{} for receiving *\/$/;"	m	struct:proto	typeref:struct:proto::sockaddr
+sasend	ping.h	/^  struct sockaddr  *sasend;	\/* sockaddr{} for send, from getaddrinfo *\/$/;"	m	struct:proto	typeref:struct:proto::sockaddr
+sccsid	old/bsdping.c	/^static char sccsid[] = "@(#)ping.c	8.1 (Berkeley) 6\/5\/93";$/;"	v	file:
+send_v4	send_v4.c	/^send_v4(void)$/;"	f
+send_v6	send_v6.c	/^send_v6()$/;"	f
+sendbuf	ping.h	/^char	 sendbuf[BUFSIZE];$/;"	v
+sig_alrm	sig_alrm.c	/^sig_alrm(int signo)$/;"	f
+sockfd	ping.h	/^int		 sockfd;$/;"	v
+summary	old/bsdping.c	/^summary()$/;"	f
+timing	old/bsdping.c	/^int timing;			\/* flag to do timing *\/$/;"	v
+tmax	old/bsdping.c	/^double tmax = 0.0;		\/* maximum round trip time *\/$/;"	v
+tmin	old/bsdping.c	/^double tmin = 999999999.0;	\/* minimum round trip time *\/$/;"	v
+tsum	old/bsdping.c	/^double tsum = 0.0;		\/* sum of all times, for doing average *\/$/;"	v
+ttab	old/bsdping.c	/^static char *ttab[] = {$/;"	v	file:
+tv_sub	tv_sub.c	/^tv_sub(struct timeval *out, struct timeval *in)$/;"	f
+tvsub	old/bsdping.c	/^tvsub(out, in)$/;"	f
+un_ctl6	old/ip6.h	/^	} un_ctl6;$/;"	m	union:ip6hdr::__anon1	typeref:struct:ip6hdr::__anon1::ip6hdrctl
+un_data16	old/icmp6.h	/^	u_int16_t	un_data16[2];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon2
+un_data32	old/icmp6.h	/^	u_int32_t	un_data32[1];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon2
+un_data8	old/icmp6.h	/^	u_int8_t	un_data8[4];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon2
+un_vfc	old/ip6.h	/^	u_int8_t un_vfc;		\/* 4 bits version, 4 bits reserved *\/$/;"	m	union:ip6hdr::__anon1
+usage	old/bsdping.c	/^usage()$/;"	f
+verbose	ping.h	/^int		 verbose;$/;"	v
+whereto	old/bsdping.c	/^struct sockaddr whereto;	\/* who to ping *\/$/;"	v	typeref:struct:sockaddr
